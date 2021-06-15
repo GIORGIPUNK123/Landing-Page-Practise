@@ -15,6 +15,8 @@ header {
   fill: black;
   font-weight: 400;
   margin-bottom: 280px;
+  max-width: 100%;
+  width: 100%;
 }
 .logo-div {
   margin-left: 6%;
@@ -112,6 +114,18 @@ header {
   color: #47aee1;
   font-size: 30px;
   margin-right: 4%;
+}
+.burger-bar:hover {
+  cursor: pointer;
+}
+.mobile-header {
+  display: none;
+  flex-direction: column;
+  max-height: 800px;
+  height: 100%;
+}
+.mobile-header.active {
+  display: flex;
 }
 
 /* Section1 */
@@ -247,6 +261,13 @@ header {
   font-size: 25px;
 }
 /* Portfolio section */
+.full-row {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 3000px;
+}
 .portfolio-section-div {
   display: flex;
   flex-direction: column;
@@ -278,6 +299,7 @@ header {
   border-bottom: 4px solid #fff;
   padding-bottom: 10px;
   color: #fff;
+  width: fit-content;
 }
 .portfolio-ul {
   display: flex;
@@ -299,7 +321,8 @@ header {
 }
 .portfolio-mini-blocks {
   height: 308px;
-  width: 410px;
+  max-width: 410px;
+  width: 100%;
 }
 .first-row {
   display: flex;
@@ -402,7 +425,7 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 422px;
+  width: 100%;
   padding-bottom: 90px;
   border-bottom-left-radius: 45px;
   border-bottom-right-radius: 45px;
@@ -477,30 +500,38 @@ button:hover {
 }
 /* CONTACT US SECTION */
 .contact-us-section {
+  display: flex;
+  flex-direction: row;
   font-family: "Raleway";
+}
+.left-contact-div {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  width: 100%;
   margin-left: 7%;
-  padding-right: 10%;
-  background-image: url(../img/ContactFormBackground.svg);
-  background-repeat: no-repeat;
-  background-position-x: 100%;
-  background-position-y: top;
 }
 .left-bottom-contact-div-wrapper {
   display: flex;
   flex-direction: column;
   max-width: 50%;
   width: 100%;
+  padding-bottom: 50px;
 }
-.contact-bottom-part-div {
+.contact-bottom-right-part-div {
   display: flex;
   width: 100%;
-  margin-top: 100px;
+  justify-content: center;
+  background-image: url(../img/ContactFormBackground.svg);
+  background-position-y: 300%;
+  background-position-x: 20%;
+  background-repeat: no-repeat;
+  padding-bottom: 270px;
 }
 .contact-information-div {
   margin-top: 180px;
-}
-.contact-us-heading-div {
-  max-width: 633px;
+  max-width: fit-content;
+  width: 100%;
 }
 .contact-us-heading {
   font-size: 50px;
@@ -555,7 +586,7 @@ button:hover {
   padding-left: 20px;
 }
 .contact-forms-label {
-  margin-left: 20px;
+  margin-left: 100px;
   font-size: 29px;
   color: #fff;
   font-weight: 500;
@@ -585,11 +616,14 @@ button:hover {
   margin-top: 20px;
 }
 .bottom-contact-forms {
+  padding-top: 200px;
   display: flex;
   flex-direction: column;
 }
 /* FOOTER */
 footer {
+  display: block;
+  flex-direction: column;
   background-color: #495254;
   height: 506px;
   font-family: "Raleway";
@@ -599,20 +633,18 @@ footer {
   height: 90%;
   justify-content: space-between;
 }
-.left-footer-div {
-  margin-left: 10%;
-}
 .footer-div {
   max-width: 400px;
   width: 100%;
-  background-color: green;
+  margin-top: 100px;
+  margin-left: 10%;
 }
+
 .footer-logo-div {
   display: flex;
   height: 80px;
   max-width: 100%;
   width: 100%;
-  margin-top: 100px;
 }
 .footer-logo-text {
   font-size: 56px;
@@ -620,4 +652,184 @@ footer {
   font-weight: bold;
   margin-top: 20px;
   margin-left: 20px;
+}
+.right-footer-div-wrapper {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 100px;
+}
+.right-footer-div-child-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 40%;
+  max-height: 80%;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 40px;
+}
+.right-footer-div-child-2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  margin-left: 100px;
+}
+.footer-child-1-first-div {
+  max-width: 100%;
+  width: 100%;
+  max-height: 50px;
+  height: 100%;
+}
+.footer-child-1-second-div {
+  max-width: 100%;
+  width: 100%;
+  max-height: 50px;
+  height: 100%;
+}
+.footer-child-1-third-div {
+  max-width: 100%;
+  width: 100%;
+  max-height: 50px;
+  height: 100%;
+}
+.footer-address-text {
+  font-size: 25px;
+  color: #fff;
+}
+.footer-subscribe-text {
+  font-size: 25px;
+  color: #fff;
+}
+.email-join-div-wrapper {
+  display: flex;
+}
+.Email-input {
+  background-color: #fff;
+  height: 58px;
+  max-width: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 19px;
+  padding-left: 35px;
+  margin-right: 7%;
+}
+.footer-mail-form {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 80px;
+  margin-right: 4%;
+}
+.form-join-button {
+  background-color: #47aee1;
+  width: 160px;
+  height: 58px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+.footer-ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+  width: 100%;
+  font-size: 25px;
+  color: #fff;
+}
+.bottom-footer-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 10%;
+  height: 100%;
+}
+.bottom-footer-part-text {
+  color: #fff;
+  font-size: 25px;
+}
+.footer-first-li-line {
+  display: none;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+}
+.footer-second-li-line {
+  display: none;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+}
+.button-clicked {
+  justify-content: unset;
+  position: absolute;
+  top: 0;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: #fff;
+}
+.padding-disable {
+  padding: 0;
+}
+.mobile-navbar {
+  display: none;
+  height: 100%;
+  max-height: 50%;
+}
+.mobile-nav-turned-on {
+  display: flex;
+}
+.logo-logo-div {
+  display: none;
+  margin-left: 6%;
+  align-items: center;
+}
+.logo-logo-div.button-clicked-logo {
+  display: flex;
+}
+.logo-div.old-logo-div {
+  display: none;
+}
+.old-burger-bar {
+  display: none;
+}
+.burger-bar-new {
+  display: none;
+  color: #47aee1;
+  font-size: 30px;
+  margin-right: 4%;
+}
+.burger-bar-new:hover {
+  cursor: pointer;
+}
+.new-bar {
+  display: block;
+}
+.top-div-part {
+  max-height: 30%;
+  height: 100%;
+}
+.header-ul-button-clicked {
+  flex-direction: column;
+}
+.header-nav-ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+  color: #495254;
+}
+.burger-bar-30-percent {
+  align-items: flex-end;
+  height: 30%;
+}
+.vertical-scrollbar {
+  overflow-y: hidden
 }

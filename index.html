@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Agency website">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Giorgi Charashvili">
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/fonts.css" />
@@ -13,10 +16,24 @@
   <title>Document</title>
 </head>
 
-<body>
-  <header>
-    <div class="horizontal-header">
-      <div class="logo-div">
+<body id="body">
+  <header id="header">
+    <div class="horizontal-header" id="horizontal-header">
+      <div class="top-div-part">
+        <div class="logo-logo-div" id="logo-logo-div">
+          <img src="img/Logo-img.svg" alt="" />
+          <h3 class="logo-text">Agency</h3>
+        </div>
+      </div>
+      <nav class="mobile-navbar" id="mobile-navbar">
+        <ul class="header-nav-ul" id="header-nav-ul">
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="logo-div" id="logo-div">
         <img src="img/Logo-img.svg" alt="" />
         <h3 class="logo-text">Agency</h3>
       </div>
@@ -35,7 +52,7 @@
           </div>
         </a>
       </div>
-      <div class="burger-bar">
+      <div class="burger-bar" id="burger-bar">
         <i class="fas fa-bars"></i>
       </div>
     </div>
@@ -163,68 +180,80 @@
       </ul>
     </nav>
     <div class="portfolio-mini-blocks-wrapper">
+      <div class="full-row">
+          <img class="portfolio-mini-blocks" src="img/first-mini-block.png" alt="" />
+          <img class="portfolio-mini-blocks" src="img/second-mini-block.png" alt="" />
+          <img class="portfolio-mini-blocks" src="img/third-mini-block.png" alt="" />
+          <img class="portfolio-mini-blocks" src="img/fourth-mini-block.png" alt="" />
+          <img class="portfolio-mini-blocks" src="img/fifth-mini-block.png" alt="" />
+          <img class="portfolio-mini-blocks" src="img/sixth-mini-block.png" alt="" />
+          <img class="portfolio-mini-blocks" src="img/seventh-mini-block.png" alt="" />
+          <img class="portfolio-mini-blocks" src="img/eighth-mini-block.png" alt="" />
+          <img class="portfolio-mini-blocks" src="img/ninth-mini-block.png" alt="" />
+      </div>
       <div class="first-row">
-        <div class="portfolio-mini-blocks first-portfolio-mini-block">
-          <img class="mini-block-image" src="img/first-mini-block.png" alt="" />
-        </div>
-        <div class="portfolio-mini-blocks second-portfolio-mini-block">
-          <img src="img/second-mini-block.png" alt="" />
-        </div>
-        <div class="portfolio-mini-blocks third-portfolio-mini-block">
-          <img src="img/third-mini-block.png" alt="" />
-        </div>
+          <div class="portfolio-mini-blocks first-portfolio-mini-block">
+            <img class="mini-block-image" src="img/first-mini-block.png" alt="" />
+          </div>
+          <div class="portfolio-mini-blocks second-portfolio-mini-block">
+            <img src="img/second-mini-block.png" alt="" />
+          </div>
+          <div class="portfolio-mini-blocks third-portfolio-mini-block">
+            <img src="img/third-mini-block.png" alt="" />
+          </div>
       </div>
       <div class="second-row">
-        <div class="portfolio-mini-blocks replaced-third-portfolio-mini-block">
-          <img src="img/third-mini-block.png" alt="" />
-        </div>
-        <div class="portfolio-mini-blocks fourth-portfolio-mini-block">
-          <img src="img/fourth-mini-block.png" alt="" />
-        </div>
-        <div class="portfolio-mini-blocks fifth-portfolio-mini-block">
-          <img src="img/fifth-mini-block.png" alt="" />
-        </div>
-        <div class="portfolio-mini-blocks sixth-portfolio-mini-block">
-          <img src="img/sixth-mini-block.png" alt="" />
-        </div>
+          <div class="portfolio-mini-blocks replaced-third-portfolio-mini-block">
+            <img src="img/third-mini-block.png" alt="" />
+          </div>
+          <div class="portfolio-mini-blocks fourth-portfolio-mini-block">
+            <img src="img/fourth-mini-block.png" alt="" />
+          </div>
+          <div class="portfolio-mini-blocks fifth-portfolio-mini-block">
+            <img src="img/fifth-mini-block.png" alt="" />
+          </div>
+          <div class="portfolio-mini-blocks ninth-portfolio-mini-block">
+            <img src="img/ninth-mini-block.png" alt="" />
+          </div>
       </div>
       <div class="third-row">
-        <div class="portfolio-mini-blocks replaced-fifth-portfolio-mini-block">
-          <img src="img/fifth-mini-block.png" alt="" />
-        </div>
-        <div class="portfolio-mini-blocks replaced-sixth-portfolio-mini-block">
-          <img src="img/sixth-mini-block.png" alt="" />
-        </div>
-        <div class="portfolio-mini-blocks seventh-portfolio-mini-block">
-          <img src="img/seventh-mini-block.png" alt="" />
-        </div>
-        <div class="portfolio-mini-blocks eighth-portfolio-mini-block">
-          <img src="img/eighth-mini-block.png" alt="" />
-        </div>
-        <div class="portfolio-mini-blocks ninth-portfolio-mini-block">
-          <img src="img/ninth-mini-block.png" alt="" />
-        </div>
+          <div class="portfolio-mini-blocks replaced-fifth-portfolio-mini-block">
+            <img src="img/fifth-mini-block.png" alt="" />
+          </div>
+          <div class="portfolio-mini-blocks replaced-sixth-portfolio-mini-block">
+            <img src="img/sixth-mini-block.png" alt="" />
+          </div>
+          <div class="portfolio-mini-blocks seventh-portfolio-mini-block">
+            <img src="img/seventh-mini-block.png" alt="" />
+          </div>
+          <div class="portfolio-mini-blocks eighth-portfolio-mini-block">
+            <img src="img/eighth-mini-block.png" alt="" />
+          </div>
+          <div class="portfolio-mini-blocks ninth-portfolio-mini-block">
+            <img src="img/ninth-mini-block.png" alt="" />
+          </div>
       </div>
       <div class="fourth-row">
-        <div class="portfolio-mini-blocks replaced-seventh-portfolio-mini-block">
-          <img src="img/seventh-mini-block.png" alt="" />
-        </div>
-        <div class="portfolio-mini-blocks replaced-eighth-portfolio-mini-block">
-          <img src="img/eighth-mini-block.png" alt="" />
-        </div>
+          <div class="portfolio-mini-blocks replaced-seventh-portfolio-mini-block">
+            <img src="img/seventh-mini-block.png" alt="" />
+          </div>
+          <div class="portfolio-mini-blocks replaced-eighth-portfolio-mini-block">
+            <img src="img/eighth-mini-block.png" alt="" />
+          </div>
       </div>
       <div class="fifth-row">
-        <div class="portfolio-mini-blocks replaced-ninth-portfolio-mini-block">
-          <img src="img/ninth-mini-block.png" alt="" />
-        </div>
+          <div class="portfolio-mini-blocks replaced-ninth-portfolio-mini-block">
+            <img src="img/ninth-mini-block.png" alt="" />
+          </div>
       </div>
+    </div>
   </section>
   <section class="our-team-section-div">
     <div class="our-team-heading-div">
-      <div class="our-team-heading">Our Team</div>
-      <div class="our-team-heading-paragraph">
+      <p class="our-team-heading">Our Team</p>
+      <p class="our-team-heading-paragraph">
         Our wonderful team makes it possible for us to do the things we do.
-      </div>
+      </p>
     </div>
     <div class="people-holder-div">
       <div class="people-block">
@@ -271,8 +300,6 @@
           media
         </p>
       </div>
-    </div>
-    <div class="contact-bottom-part-div">
       <div class="left-bottom-contact-div-wrapper">
         <div class="contact-information-div">
           <div class="address-div">
@@ -306,32 +333,87 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="contact-bottom-right-part-div">
       <form action="#" class="bottom-contact-forms">
         <label for="Welcome-label" class="contact-forms-label">Say Hi</label>
-        <div class="inputs-part">
-          <input type="text" placeholder="Full Name" class="contact-mini-input">
-          <input type="text" placeholder="Email Address" class="contact-mini-input">
-          <input type="text" placeholder="Message" class="contact-big-input">
-          <button class="contact-submit-button">Submit</button>
-        </div>
+          <div class="inputs-part">
+            <input type="text" placeholder="Full Name" class="contact-mini-input">
+            <input type="text" placeholder="Email Address" class="contact-mini-input">
+            <input type="text" placeholder="Message" class="contact-big-input">
+            <button class="contact-submit-button">Submit</button>
+          </div>
       </form>
     </div>
   </section>
   <footer>
     <div class="top-footer-part">
-      <div class="left-footer-div footer-div">
+      <div class="footer-div">
         <div class="footer-logo-div">
           <img src="img/Logo-img.svg" alt="Logo-img">
           <h3 class="footer-logo-text">Agency</h3>
         </div>
       </div>
       <div class="right-footer-div-wrapper">
-        
+        <div class="right-footer-div-child-1">
+          <div class="footer-child-1-first-div">
+            <span class="footer-address-text">3556 Hartford Way Vlg, Mount Pleasant,SC,
+              29466, Australia.</span>
+          </div>
+          <div class="footer-child-1-second-div">
+            <span class="footer-address-text">734-697-2907 <br>
+              843-971-1906</span>
+          </div>
+          <div class="footer-child-1-third-div">
+            <span class="footer-address-text">hello@agency.com</span>
+          </div>
+        </div>
+        <div class="right-footer-div-child-2">
+          <span class="footer-subscribe-text">Subscribe to our newsletter</span>
+          <div class="email-join-div-wrapper">
+            <form action="#" class="footer-mail-form">
+              <input type="text" placeholder="Email" class="Email-input">
+              <button class="form-join-button">Join</button>
+            </form>
+          </div>
+          <ul class="footer-ul">
+            <div class="footer-first-li-line">
+              <li class="footer-li">
+                <a href="#">Careers</a>  
+              </li>
+              <li class="footer-li">
+                <a href="#">Quote Estimate</a>  
+              </li>
+            </div>
+            <div class="footer-second-li-line">
+              <li class="footer-li">
+                <a href="#">Services</a>  
+              </li>
+              <li class="footer-li">
+                <a href="#">Portfolio</a>  
+              </li>
+            </div>
+            <li class="footer-li real-li">
+              <a href="#">Careers</a>  
+            </li>
+            <li class="footer-li real-li">
+              <a href="#">Quote Estimate</a>  
+            </li>
+            <li class="footer-li real-li">
+              <a href="#">Services</a>  
+            </li>
+            <li class="footer-li real-li">
+              <a href="#">Portfolio</a>  
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-
+    <div class="bottom-footer-part">
+      <span class="bottom-footer-part-text">© 2020 | designed by we3solutions.ca</span>
+    </div>
   </footer>
-  <script src="node.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
